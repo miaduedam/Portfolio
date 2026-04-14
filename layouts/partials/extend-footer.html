@@ -20,16 +20,16 @@
 <script src="https://udify.app/embed.min.js" id="9A5oxuT1NxDcpaCi" defer></script>
 <style>
   #dify-chatbot-bubble-button {
+    position: relative !important;
     left: auto !important;
     right: 1.5rem !important;
     bottom: 2rem !important;
     width: 72px !important;
     height: 72px !important;
-    background-color: transparent !important;
-    background-image: url('{{ "images/dobby-chatbot.webp" | relURL }}') !important;
-    background-position: center 60% !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+    min-width: 72px !important;
+    min-height: 72px !important;
+    padding: 0 !important;
+    background: transparent !important;
     border: 2px solid rgba(255, 255, 255, 0.85) !important;
     border-radius: 9999px !important;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28) !important;
@@ -39,11 +39,30 @@
     overflow: hidden !important;
   }
 
+  #dify-chatbot-bubble-button::before {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 2 !important;
+    background-image: url('{{ "images/dobby-chatbot.webp" | relURL }}') !important;
+    background-position: center 60% !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+
   #dify-chatbot-bubble-button *,
   #dify-chatbot-bubble-button::before,
   #dify-chatbot-bubble-button::after,
   #dify-chatbot-bubble-button svg {
     opacity: 0 !important;
+  }
+
+  #dify-chatbot-bubble-button::before {
+    opacity: 1 !important;
+  }
+
+  #dify-chatbot-bubble-button > * {
+    display: none !important;
   }
 
   #dify-chatbot-bubble-window {
