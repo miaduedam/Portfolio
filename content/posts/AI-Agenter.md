@@ -20,7 +20,7 @@ En agent består af 4 centrale dele.
 
 **Agentic loop** - også kaldet ReAct-mønsteret (Reasoning + Acting). Alle agenter følger det samme grundlæggende loop.
 
-<img src="/images/Agentic-loop.png" alt="Agentic-loop" width="400" height="300">
+<img src="images/Agentic-loop.png" alt="Agentic-loop" width="400" height="300">
 
 ### Agent VS Chatbot
 Det der adskiller en agent fra et chat-system er tre ting.
@@ -48,10 +48,10 @@ Jeg blev denne gang også introduceret til plan-mode, som er en planlægningstil
 
 For at starte simpelt valgte jeg at tilføje én quiz for at få et velfungerende site. Et problem vi så i mange demoer, var at quizzen blev gjort til én lang med de 29 spørgsmål. Det undgik jeg heldigvis ved at starte med den ene og sørge for via min prompt, at det ville være nemt at tilføje flere.
 
-<img src="/images/Prompt-1.png" alt="Prompt">
+<img src="images/Prompt-1.png" alt="Prompt">
 
 Jeg tog her også et valg, sammen med anbefaling fra chatbot, om at gemme quizzerne i localStorage for at opnå kundens krav om, at det skulle være muligt for brugeren at se tidligere svar.
 
-<img src="/images/Prompt-2.png" alt="Prompt">
+<img src="images/Prompt-2.png" alt="Prompt">
 
 Derefter er der faktisk ikke meget mere at sige, end at det gik forfærdeligt smooth. Den ramte plet på det billede, jeg havde af designet, og sitet i sig selv. Jeg sidder igen tilbage og tænker waow, men faktisk også puha, hvordan kommer det til at se ud for mig på arbejdsmarkedet om et par år. Når et projekt, der ville tage mig flere uger i et team, tager den 10 minutter. Men i sidste ende tror jeg ikke, det handler om at blive erstattet, men at det handler om at lære at styre den rigtigt. Hvilket er præcis det, jeg er i gang med!
