@@ -5,7 +5,7 @@ title: Automatiseret Workflow
 ## Kontekst & Formål
 I sidste uges blogindlæg legede jeg med at tilføje min første RAG til min portfolio, hvilket resulterede i at den kun havde knowledge om én enkelt side. Da jeg gennem semestret løbende vil opdatere min portfolio med nye blogindlæg og projekter, gav det mening at udvide denne knowledge og bygge et automatiseret workflow der følger med.
 
-I dette blogindlæg fortæller jeg om hvordan jeg har opnået mit resultat, samt styrket mine færdigheder inden for prompting og tidsoptimering. Da hele dette projekt er vibe-coded med en Claude agent.
+I dette blogindlæg fortæller jeg om hvordan jeg har opnået mit resultat, samt styrket mine færdigheder inden for prompting og tidsoptimering. Da hele dette projekt er vibe-coded med hjælp af claude chatbot.
 
 ## Arkitektur
 **Første trin** er at programmet finder frem til den rigtige knowledge base i Dify. Det sker ved at sende min API-nøgle til Dify, som svarer tilbage med ID'et på den knowledge base nøglen tilhører — ingen manuel konfiguration nødvendig.
@@ -33,7 +33,7 @@ I dette blogindlæg fortæller jeg om hvordan jeg har opnået mit resultat, samt
 ## Hvad Har Jeg Lært
 Det sværeste ved dette projekt har ikke været det tekniske, det har været at slippe kontrollen. Når man ikke selv skriver koden, er det svært at bevare overblikket, og det er let at ende i et dybt rabbithole, hvor man ikke får sat sig ordentligt ind i koden, og hurtigt kan tænke at den selvfølgelig har styr på det. Det er en balance jeg stadig skal finde.
 
-Denne opgave har dog taget mig et step tættere på at finde den balance. Jeg blev overrasket over hvor meget en god prompt egentlig betyder — jeg har tidligere bare smidt en opgavebeskrivelse ind i en chatbot og fået et svar tilbage, uden at tænke videre over det. At sidde med en agent og se hvor stor forskel en præcis og gennemtænkt prompt gør for det endelige resultat, har været en øjenåbner!
+Denne opgave har dog taget mig et step tættere på at finde den balance. Jeg blev overrasket over hvor meget en god prompt egentlig betyder — jeg har tidligere bare smidt en opgavebeskrivelse ind i en chatbot og fået et svar tilbage, uden at tænke videre over det. At sidde med en chatbot og se hvor stor forskel en præcis og gennemtænkt prompt gør for det endelige resultat, har været en øjenåbner!
 Derudover har jeg fået en dybere forståelse for de teknologier jeg har arbejdet med, og hvordan man med relativt lidt kode kan forbinde helt forskellige systemer og få dem til at tale sammen.
 
 ## Resultat
@@ -42,4 +42,4 @@ Workflowet er smart nok til at skelne mellem nye og eksisterende sider, hvilket 
 
 For at gøre det hurtigere arbejder programmet på 3 sider samtidigt frem for én ad gangen. For at undgå at Jina Reader opfatter det som spam, er der en bevidst pause på 600ms mellem hvert kald, hvilket generelt er god stil, så vi undgår at overbelaste den service man bruger!
 
-Det næste naturlige skridt er at gøre det helt automatisk — så workflowet selv kører én gang om ugen og tjekker efter nyt indhold, uden at jeg behøver at gøre noget. Men det er en opgave til en anden dag!
+Det næste naturlige skridt er at gøre det helt automatisk, så workflowet selv kører én gang om ugen og tjekker efter nyt indhold, uden at jeg behøver at gøre noget. Men det er en opgave til en anden dag!
