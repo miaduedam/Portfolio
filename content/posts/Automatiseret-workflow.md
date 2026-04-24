@@ -28,7 +28,7 @@ I dette blogindlæg fortæller jeg om hvordan jeg har opnået mit resultat, samt
 **Java** er sproget workflowet er skrevet i, og bruger udelukkende indbyggede biblioteker — ingen eksterne afhængigheder nødvendige.
 
 ## Diagram Af Flow
-<img src="/images/Automatiseret-workflow.png" alt="Workflow diagram" width="400" height="300">
+{{< img src="images/Automatiseret-workflow.png" alt="Workflow diagram" >}}
 
 ## Hvad Har Jeg Lært
 Det sværeste ved dette projekt har ikke været det tekniske, det har været at slippe kontrollen. Når man ikke selv skriver koden, er det svært at bevare overblikket, og det er let at ende i et dybt rabbithole, hvor man ikke får sat sig ordentligt ind i koden, og hurtigt kan tænke at den selvfølgelig har styr på det. Det er en balance jeg stadig skal finde.
